@@ -1,0 +1,193 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6838,        185]
+NotebookOptionsPosition[      4606,        144]
+NotebookOutlinePosition[      5010,        160]
+CellTagsIndexPosition[      4967,        157]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Workshop Question Bank", "Title",
+ CellChangeTimes->{{3.8227449824281073`*^9, 
+  3.8227449868029428`*^9}},ExpressionUUID->"81310485-c578-4f09-820a-\
+b435be7593e1"],
+
+Cell[CellGroupData[{
+
+Cell["Which of the following adds three numbers together", "ItemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.8227450062585497`*^9}},ExpressionUUID->"fdc7fe15-e0cb-40ee-a2b5-\
+72c3f7424fcc"],
+
+Cell["1+2+3", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745014097698*^9}},ExpressionUUID->"c14cfb74-c076-41bf-a736-\
+d8f3198fc687"],
+
+Cell["Plus[{1,2,3}]", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745019534641*^9}},ExpressionUUID->"3dc4665b-c7c8-4e22-a296-\
+a88485404e54"],
+
+Cell["Plus[1,2,3]", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745025369746*^9}},ExpressionUUID->"fd01e8a4-476c-4b13-bdc0-\
+5a808d8d3415"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Which function shows the underlying structure of an expression?\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.8227450541783853`*^9}},ExpressionUUID->"5b735c0d-b830-4c51-a31f-\
+6c21d93fc761"],
+
+Cell["StructuralForm", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745060768581*^9}},ExpressionUUID->"1fb8a7b6-4848-4894-b91f-\
+80804fd54310"],
+
+Cell["Fullorm", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.8227450630469832`*^9}},ExpressionUUID->"2ec5e188-0b5a-45d2-9957-\
+e0550e102fb3"],
+
+Cell["CompleteForm", "SubitemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745075568225*^9}},ExpressionUUID->"961c55aa-1023-441d-9d58-\
+5dba2a25af8c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Given a 10x10 matrix called mat, extract the 1st and 3rd elements of the 4th \
+through 7th rows\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.82274499630175*^9, 
+  3.822745111601161*^9}},ExpressionUUID->"efc60ac6-8ed4-4280-ad22-\
+028e8c17fe7e"],
+
+Cell[BoxData[
+ RowBox[{"mat", "[", 
+  RowBox[{"[", 
+   RowBox[{
+    RowBox[{"4", ";;", "7"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8227451134511766`*^9, 
+  3.822745120710949*^9}},ExpressionUUID->"ce8e599c-07ce-4f4c-a5c4-\
+23f273d5899d"]
+}, Open  ]],
+
+Cell["What is the output of Apply[f,g[a,b,c]]?", "ItemNumbered",
+ CellChangeTimes->{{3.822745154374689*^9, 
+  3.8227451657301893`*^9}},ExpressionUUID->"620c5915-7009-4906-b520-\
+9fc1a5e9d9fb"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Given a list of numbers which line of code replaces negative entries with 0?\
+\>", "ItemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 
+  3.82274524843617*^9}},ExpressionUUID->"733e7f04-19db-4c3f-bf5d-\
+a9265813e783"],
+
+Cell["list/._?!Positive->0", "SubitemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 
+  3.8227452639996147`*^9}},ExpressionUUID->"6fb04bde-cb88-4411-8eab-\
+0083f23ec246"],
+
+Cell["list/._?<0->0", "SubitemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 
+  3.8227452747806005`*^9}},ExpressionUUID->"0f5492da-f409-42b0-8cec-\
+533e22758d5d"],
+
+Cell["list/.x_<0->0", "SubitemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 
+  3.8227452985012245`*^9}},ExpressionUUID->"6c6e064f-0c59-49b9-8151-\
+0ddc95ee63e3"],
+
+Cell["list/._?Negative->0", "SubitemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 3.8227453052647285`*^9}, {3.8227453596393957`*^9, 
+  3.822745359641388*^9}},ExpressionUUID->"3c72479d-724c-4d5d-8d95-\
+10aa468ccaa1"],
+
+Cell["list/.x_/;x<0->0", "SubitemNumbered",
+ CellChangeTimes->{{3.8227451732098155`*^9, 3.8227451956238656`*^9}, {
+  3.822745245735723*^9, 3.8227453052647285`*^9}, {3.822745360855966*^9, 
+  3.8227453981672935`*^9}},ExpressionUUID->"170cf2de-fe9d-47e4-9021-\
+3dd92dd670a8"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{468.5, 317.5},
+WindowMargins->{{57, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 7, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3fd0617c-770c-45d8-82f1-cbb4f9efae4b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 169, 3, 98, "Title",ExpressionUUID->"81310485-c578-4f09-820a-b435be7593e1"],
+Cell[CellGroupData[{
+Cell[774, 29, 201, 3, 31, "ItemNumbered",ExpressionUUID->"fdc7fe15-e0cb-40ee-a2b5-72c3f7424fcc"],
+Cell[978, 34, 157, 3, 26, "SubitemNumbered",ExpressionUUID->"c14cfb74-c076-41bf-a736-d8f3198fc687"],
+Cell[1138, 39, 165, 3, 26, "SubitemNumbered",ExpressionUUID->"3dc4665b-c7c8-4e22-a296-a88485404e54"],
+Cell[1306, 44, 163, 3, 26, "SubitemNumbered",ExpressionUUID->"fd01e8a4-476c-4b13-bdc0-5a808d8d3415"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1506, 52, 222, 5, 31, "ItemNumbered",ExpressionUUID->"5b735c0d-b830-4c51-a31f-6c21d93fc761"],
+Cell[1731, 59, 166, 3, 26, "SubitemNumbered",ExpressionUUID->"1fb8a7b6-4848-4894-b91f-80804fd54310"],
+Cell[1900, 64, 161, 3, 26, "SubitemNumbered",ExpressionUUID->"2ec5e188-0b5a-45d2-9957-e0550e102fb3"],
+Cell[2064, 69, 164, 3, 26, "SubitemNumbered",ExpressionUUID->"961c55aa-1023-441d-9d58-5dba2a25af8c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2265, 77, 252, 6, 51, "ItemNumbered",ExpressionUUID->"efc60ac6-8ed4-4280-ad22-028e8c17fe7e"],
+Cell[2520, 85, 308, 9, 28, "Input",ExpressionUUID->"ce8e599c-07ce-4f4c-a5c4-23f273d5899d"]
+}, Open  ]],
+Cell[2843, 97, 192, 3, 31, "ItemNumbered",ExpressionUUID->"620c5915-7009-4906-b520-9fc1a5e9d9fb"],
+Cell[CellGroupData[{
+Cell[3060, 104, 286, 6, 51, "ItemNumbered",ExpressionUUID->"733e7f04-19db-4c3f-bf5d-a9265813e783"],
+Cell[3349, 112, 228, 4, 26, "SubitemNumbered",ExpressionUUID->"6fb04bde-cb88-4411-8eab-0083f23ec246"],
+Cell[3580, 118, 221, 4, 26, "SubitemNumbered",ExpressionUUID->"0f5492da-f409-42b0-8cec-533e22758d5d"],
+Cell[3804, 124, 221, 4, 26, "SubitemNumbered",ExpressionUUID->"6c6e064f-0c59-49b9-8151-0ddc95ee63e3"],
+Cell[4028, 130, 275, 4, 26, "SubitemNumbered",ExpressionUUID->"3c72479d-724c-4d5d-8d95-10aa468ccaa1"],
+Cell[4306, 136, 272, 4, 26, "SubitemNumbered",ExpressionUUID->"170cf2de-fe9d-47e4-9021-3dd92dd670a8"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,392 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15362,        384]
+NotebookOptionsPosition[     10682,        311]
+NotebookOutlinePosition[     11241,        331]
+CellTagsIndexPosition[     11198,        328]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wolfram Workshops ", "Title",
+ CellChangeTimes->{{3.8182680147304845`*^9, 3.8182680225330286`*^9}, {
+  3.822740722833331*^9, 
+  3.822740724961414*^9}},ExpressionUUID->"431def1b-5976-42a3-a7df-\
+3f6d5824bddc"],
+
+Cell["Timing:  Five 2-hour long workshops", "Subsubsection",
+ CellChangeTimes->{{3.818269193569443*^9, 3.818269209920051*^9}, {
+  3.822740730097227*^9, 
+  3.8227407384972816`*^9}},ExpressionUUID->"d1fbd5fe-f8eb-40ab-bff0-\
+fd88df1f95e6"],
+
+Cell[CellGroupData[{
+
+Cell["Goals in a series workshop", "Section",
+ CellChangeTimes->{{3.8182680317828827`*^9, 3.8182680321880007`*^9}, {
+  3.8182681080609636`*^9, 3.8182681119375753`*^9}, {3.82274068345328*^9, 
+  3.822740684235223*^9}},ExpressionUUID->"bf7ec8e4-a1b1-4975-91db-\
+10121e4a876d"],
+
+Cell["\<\
+Introduce faculty, staff, and students to the Wolfram Language and Mathematica\
+\>", "Item",
+ CellChangeTimes->{{3.8182680409158144`*^9, 
+  3.818268118725563*^9}},ExpressionUUID->"fb3983c7-c571-4424-8c36-\
+d54e9a69b398"],
+
+Cell["\<\
+Take them from no background in the Wolfram Language to prepared for the \
+Official Wolfram Certification Exam, and add specific domain knowledge\
+\>", "Item",
+ CellChangeTimes->{{3.8182680409158144`*^9, 3.818268142543156*^9}, {
+  3.822740690622167*^9, 
+  3.8227406976924257`*^9}},ExpressionUUID->"f738bc69-ea01-40ac-87f4-\
+023964454cde"],
+
+Cell["\<\
+Everyone who attends will recognize that the Wolfram Language is robust and \
+on-par and sometimes better than other computational languages that are open \
+source\
+\>", "Item",
+ CellChangeTimes->{{3.8182680409158144`*^9, 3.8182682258144217`*^9}, {
+  3.818269695689519*^9, 
+  3.818269695690484*^9}},ExpressionUUID->"e6dacb18-0b57-4660-ac8e-\
+5a75dcce2f38"],
+
+Cell["\<\
+It will be recommended that everyone have Mathematica downloaded - but Part 1 \
+can be performed on Mathematica Online (no installation required)\
+\>", "Item",
+ CellChangeTimes->{{3.8182680409158144`*^9, 3.8182682258144217`*^9}, {
+  3.8182696961518483`*^9, 3.818269719085436*^9}, {3.822740711839139*^9, 
+  3.822740714061352*^9}},ExpressionUUID->"89dd22de-9a17-43ef-8c09-\
+692a662666ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 1 - Introducing Wolfram and the Wolfram Knowledgebase", "Section",
+ CellChangeTimes->{{3.8182682336638436`*^9, 3.8182682427211256`*^9}, {
+  3.818268278972231*^9, 3.8182682851199865`*^9}, {3.8183344578781815`*^9, 
+  3.81833446330595*^9}},ExpressionUUID->"fe0a9675-65c6-48fe-994a-\
+ede27a6b6f3c"],
+
+Cell["\<\
+Goal: Introductory workshop take someone from Zero to Comfortable with \
+Documentation, the Notebook, and basic functionality of working with the \
+Wolfram Knowledgebase.\
+\>", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.8182682989110975`*^9, 
+  3.818268309034861*^9}},ExpressionUUID->"c1e921ea-7cbf-4fc4-a890-\
+d7686e61c816"],
+
+Cell["Two Hours long", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.8182682711604166`*^9, 
+  3.818268273492551*^9}},ExpressionUUID->"e5319a2f-e0e7-4ee7-ab14-\
+2753559c4a09"],
+
+Cell["Participants will type along with us", "Text",
+ CellDingbat->
+  "\[FilledCircle]",ExpressionUUID->"ba5344c9-86c7-4825-82d6-418a4a30c13e"],
+
+Cell[" Basic Input", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.818268449101464*^9}},ExpressionUUID->"defc3885-207f-43db-be2f-\
+0ce9b433dbbb"],
+
+Cell["Rules of the Wolfram Language", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.8182684569750285`*^9}},ExpressionUUID->"64d93be1-66eb-4282-bae5-\
+a5e07d0d147c"],
+
+Cell["Inputs and Typesetting", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.818268463949622*^9}},ExpressionUUID->"6b483d78-b9db-4ba9-9829-\
+73b8ec7d3ae0"],
+
+Cell["Options and Documentation", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.8182684723305893`*^9}},ExpressionUUID->"38ebbc88-085f-4633-bc66-\
+2f7dd805602d"],
+
+Cell["Interactive Models ", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.818268477931596*^9}},ExpressionUUID->"95649826-8d34-4233-8bfa-\
+ea57a5d8e957"],
+
+Cell["Working with Data", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 3.8182684831425905`*^9}, {
+  3.8184315675756598`*^9, 
+  3.8184315675766573`*^9}},ExpressionUUID->"3d0ebefa-cca4-45cb-aa3a-\
+c67d28001c4e"],
+
+Cell["Deeper Dive into the Documentation Center", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.8182685086274357`*^9}},ExpressionUUID->"86a3b198-354c-4766-86db-\
+96bd3a2fdf23"],
+
+Cell["Using the Wolfram Knowledgebase", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.8182685184180174`*^9}},ExpressionUUID->"09f85f3d-67c1-4ee3-ad9a-\
+68272a21f6c7"],
+
+Cell["Quick Typing", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.818268523765772*^9}},ExpressionUUID->"33a164fe-008b-40ee-9e5b-\
+f8b4e0719d69"],
+
+Cell["Presenting in Mathematica", "Item",
+ CellChangeTimes->{{3.818268434021978*^9, 
+  3.818268535517975*^9}},ExpressionUUID->"e9e78cc2-80d3-4ea1-999e-\
+f2781ed18fc9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 2 - Continuing with the Wolfram Language", "Section",
+ CellChangeTimes->{{3.818268797522006*^9, 
+  3.8182688084545884`*^9}},ExpressionUUID->"19abe9fe-9453-4fb5-818f-\
+4d6f46335f08"],
+
+Cell["\<\
+Goal: This part addresses topics in the Certification and dives into \
+functionality of the Wolfram Language specially the architecture behind the \
+language and best practices\
+\>", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.818268847002442*^9, 3.8182688542263594`*^9}, {
+  3.818268897807528*^9, 3.8182689089908032`*^9}, {3.82274083775765*^9, 
+  3.822740856391271*^9}},ExpressionUUID->"7be0316c-f10c-491c-a672-\
+3e7f8dbc0d16"],
+
+Cell["Four Hours long", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{
+  3.8182689197480235`*^9, {3.822740543577443*^9, 
+   3.822740544085044*^9}},ExpressionUUID->"efdab34e-22d7-4564-b89f-\
+e1af09132b74"],
+
+Cell["\<\
+Participants will have a half-filled notebook and there will be exercises
+\tLecture 20~30 min, 10 min exercises\
+\>", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.822740869406081*^9, 
+  3.8227408784570227`*^9}},ExpressionUUID->"cdaa8f82-8605-479c-afa2-\
+13a978510fad"],
+
+Cell["Advanced Basics", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690060670958`*^9}},ExpressionUUID->"3a8da94c-0397-4ee7-90eb-\
+ad8b86bf3c61"],
+
+Cell["Iterations", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690085000496`*^9}},ExpressionUUID->"c08090a1-0071-4def-923e-\
+b6d7ba98c84e"],
+
+Cell["Advanced Lists", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.818269011968418*^9}},ExpressionUUID->"9d663e2b-ae5d-4bcf-8379-\
+826102eb176d"],
+
+Cell["Associations", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690140913773`*^9}},ExpressionUUID->"6af32868-5eca-4c4b-bf44-\
+441fb8a5028d"],
+
+Cell["Patterns", "Item",
+ CellChangeTimes->{{3.818269146977442*^9, 
+  3.818269148247862*^9}},ExpressionUUID->"2072e764-a477-43ea-a85a-\
+0940eaae1fdc"],
+
+Cell["Flow Control", "Item",
+ CellChangeTimes->{{3.818269146977442*^9, 
+  3.818269150433446*^9}},ExpressionUUID->"49d310aa-b4a0-4f87-88b0-\
+94d739b83f83"],
+
+Cell["Parallel Computing and Performance Enhancement", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690512365437`*^9}},ExpressionUUID->"011674f0-ec8d-4df7-9ce3-\
+0cf6946c64f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Part 3 - Progressing in the Wolfram Language", "Section",
+ CellChangeTimes->{{3.818269065302371*^9, 
+  3.818269072267557*^9}},ExpressionUUID->"da9debf5-3788-482d-9a18-\
+901b67d0b199"],
+
+Cell["\<\
+Goal: This part addresses topics in the Certification and goes deep into four \
+complex topics\
+\>", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.818268847002442*^9, 3.8182688542263594`*^9}, {
+  3.818268897807528*^9, 3.8182689089908032`*^9}, {3.8182691202020416`*^9, 
+  3.818269126216997*^9}},ExpressionUUID->"87488528-25ec-414f-b718-\
+663549b59281"],
+
+Cell["four Hours long", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{
+  3.8182689197480235`*^9, {3.8227405543584538`*^9, 
+   3.822740556189105*^9}},ExpressionUUID->"62aff035-2fe5-435f-be15-\
+d493ab41cc66"],
+
+Cell["\<\
+Participants will have a half-filled notebook and there will be exercises
+\tLecture ~15-20 min, 5 min exercises\
+\>", "Text",
+ CellDingbat->"\[FilledCircle]",
+ CellChangeTimes->{{3.8182691342439933`*^9, 
+  3.8182691396624928`*^9}},ExpressionUUID->"8d46051b-161c-44dd-8cea-\
+5360588b1ce9"],
+
+Cell["Data Analysis/Data Sets", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690210329275`*^9}},ExpressionUUID->"0ba3e393-5631-4c9d-abdb-\
+79e55e7a2230"],
+
+Cell["Making nice Visualizations", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 3.8182690308907537`*^9}, {
+  3.8227406327581244`*^9, 
+  3.8227406362636395`*^9}},ExpressionUUID->"e848f901-9a96-477e-86cf-\
+83441650d2e9"],
+
+Cell["Graphic User Interfaces (GUI)", "Item",
+ CellChangeTimes->{{3.8182690013993683`*^9, 
+  3.8182690425575733`*^9}},ExpressionUUID->"b40ed33e-87aa-4963-bb34-\
+5b939d692899"],
+
+Cell["Customizing Functions", "Item",
+ CellChangeTimes->{{3.818269146977442*^9, 
+  3.818269155237966*^9}},ExpressionUUID->"58996c78-e9ee-4fbe-9b7e-\
+82c025417a81"],
+
+Cell["Neural Nets and Machine Learning (Intro)", "Item",
+ CellChangeTimes->{{3.818269146977442*^9, 3.8182691603939204`*^9}, {
+  3.8227407486206226`*^9, 3.8227407486216197`*^9}, {3.8227409031551332`*^9, 
+  3.8227409049722834`*^9}},ExpressionUUID->"08ea81d9-83ca-4ba5-9991-\
+69d176c3fb97"],
+
+Cell["Specialized content", "Item",
+ CellChangeTimes->{{3.818269146977442*^9, 3.8182691603939204`*^9}, {
+  3.8227407494374385`*^9, 
+  3.8227407526418715`*^9}},ExpressionUUID->"7d62f794-541d-4f96-bd49-\
+d7252e2e4c34"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Official Wolfram Certification", "Section",
+ CellChangeTimes->{{3.8182698558195457`*^9, 
+  3.8182698629674473`*^9}},ExpressionUUID->"236e55c0-e3f2-4dce-9415-\
+68a7f73e0698"],
+
+Cell["\<\
+https://www.wolfram.com/wolfram-u/certification/level1/mathematica/ \
+\>", "Text",
+ CellChangeTimes->{{3.8182698717095675`*^9, 
+  3.8182698791855764`*^9}},ExpressionUUID->"cf5359c8-a61d-45ba-ba7e-\
+756d55444c00"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{948., 495.75},
+WindowMargins->{{102.75, Automatic}, {665.5, Automatic}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, 
+  "SlideshowSettings" -> {"Toolbar" -> True}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 7, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f938d552-7af3-4748-a021-d3dbb24837a0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 214, 4, 107, "Title",ExpressionUUID->"431def1b-5976-42a3-a7df-3f6d5824bddc"],
+Cell[797, 28, 237, 4, 49, "Subsubsection",ExpressionUUID->"d1fbd5fe-f8eb-40ab-bff0-fd88df1f95e6"],
+Cell[CellGroupData[{
+Cell[1059, 36, 273, 4, 57, "Section",ExpressionUUID->"bf7ec8e4-a1b1-4975-91db-10121e4a876d"],
+Cell[1335, 42, 230, 5, 35, "Item",ExpressionUUID->"fb3983c7-c571-4424-8c36-d54e9a69b398"],
+Cell[1568, 49, 348, 7, 58, "Item",ExpressionUUID->"f738bc69-ea01-40ac-87f4-023964454cde"],
+Cell[1919, 58, 366, 8, 58, "Item",ExpressionUUID->"e6dacb18-0b57-4660-ac8e-5a75dcce2f38"],
+Cell[2288, 68, 396, 7, 58, "Item",ExpressionUUID->"89dd22de-9a17-43ef-8c09-692a662666ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2721, 80, 305, 4, 73, "Section",ExpressionUUID->"fe0a9675-65c6-48fe-994a-ede27a6b6f3c"],
+Cell[3029, 86, 355, 8, 63, "Text",ExpressionUUID->"c1e921ea-7cbf-4fc4-a890-d7686e61c816"],
+Cell[3387, 96, 191, 4, 38, "Text",ExpressionUUID->"e5319a2f-e0e7-4ee7-ab14-2753559c4a09"],
+Cell[3581, 102, 143, 2, 38, "Text",ExpressionUUID->"ba5344c9-86c7-4825-82d6-418a4a30c13e"],
+Cell[3727, 106, 154, 3, 35, "Item",ExpressionUUID->"defc3885-207f-43db-be2f-0ce9b433dbbb"],
+Cell[3884, 111, 173, 3, 35, "Item",ExpressionUUID->"64d93be1-66eb-4282-bae5-a5e07d0d147c"],
+Cell[4060, 116, 164, 3, 35, "Item",ExpressionUUID->"6b483d78-b9db-4ba9-9829-73b8ec7d3ae0"],
+Cell[4227, 121, 169, 3, 35, "Item",ExpressionUUID->"38ebbc88-085f-4633-bc66-2f7dd805602d"],
+Cell[4399, 126, 161, 3, 35, "Item",ExpressionUUID->"95649826-8d34-4233-8bfa-ea57a5d8e957"],
+Cell[4563, 131, 214, 4, 35, "Item",ExpressionUUID->"3d0ebefa-cca4-45cb-aa3a-c67d28001c4e"],
+Cell[4780, 137, 185, 3, 35, "Item",ExpressionUUID->"86a3b198-354c-4766-86db-96bd3a2fdf23"],
+Cell[4968, 142, 175, 3, 35, "Item",ExpressionUUID->"09f85f3d-67c1-4ee3-ad9a-68272a21f6c7"],
+Cell[5146, 147, 154, 3, 35, "Item",ExpressionUUID->"33a164fe-008b-40ee-9e5b-f8b4e0719d69"],
+Cell[5303, 152, 167, 3, 35, "Item",ExpressionUUID->"e9e78cc2-80d3-4ea1-999e-f2781ed18fc9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5507, 160, 192, 3, 73, "Section",ExpressionUUID->"19abe9fe-9453-4fb5-818f-4d6f46335f08"],
+Cell[5702, 165, 457, 9, 63, "Text",ExpressionUUID->"7be0316c-f10c-491c-a672-3e7f8dbc0d16"],
+Cell[6162, 176, 218, 5, 38, "Text",ExpressionUUID->"efdab34e-22d7-4564-b89f-e1af09132b74"],
+Cell[6383, 183, 296, 7, 63, "Text",ExpressionUUID->"cdaa8f82-8605-479c-afa2-13a978510fad"],
+Cell[6682, 192, 161, 3, 35, "Item",ExpressionUUID->"3a8da94c-0397-4ee7-90eb-ad8b86bf3c61"],
+Cell[6846, 197, 156, 3, 35, "Item",ExpressionUUID->"c08090a1-0071-4def-923e-b6d7ba98c84e"],
+Cell[7005, 202, 158, 3, 35, "Item",ExpressionUUID->"9d663e2b-ae5d-4bcf-8379-826102eb176d"],
+Cell[7166, 207, 158, 3, 35, "Item",ExpressionUUID->"6af32868-5eca-4c4b-bf44-441fb8a5028d"],
+Cell[7327, 212, 150, 3, 35, "Item",ExpressionUUID->"2072e764-a477-43ea-a85a-0940eaae1fdc"],
+Cell[7480, 217, 154, 3, 35, "Item",ExpressionUUID->"49d310aa-b4a0-4f87-88b0-94d739b83f83"],
+Cell[7637, 222, 192, 3, 35, "Item",ExpressionUUID->"011674f0-ec8d-4df7-9ce3-0cf6946c64f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7866, 230, 189, 3, 73, "Section",ExpressionUUID->"da9debf5-3788-482d-9a18-901b67d0b199"],
+Cell[8058, 235, 378, 8, 38, "Text",ExpressionUUID->"87488528-25ec-414f-b718-663549b59281"],
+Cell[8439, 245, 220, 5, 38, "Text",ExpressionUUID->"62aff035-2fe5-435f-be15-d493ab41cc66"],
+Cell[8662, 252, 298, 7, 63, "Text",ExpressionUUID->"8d46051b-161c-44dd-8cea-5360588b1ce9"],
+Cell[8963, 261, 169, 3, 35, "Item",ExpressionUUID->"0ba3e393-5631-4c9d-abdb-79e55e7a2230"],
+Cell[9135, 266, 225, 4, 35, "Item",ExpressionUUID->"e848f901-9a96-477e-86cf-83441650d2e9"],
+Cell[9363, 272, 175, 3, 35, "Item",ExpressionUUID->"b40ed33e-87aa-4963-bb34-5b939d692899"],
+Cell[9541, 277, 163, 3, 35, "Item",ExpressionUUID->"58996c78-e9ee-4fbe-9b7e-82c025417a81"],
+Cell[9707, 282, 287, 4, 35, "Item",ExpressionUUID->"08ea81d9-83ca-4ba5-9991-69d176c3fb97"],
+Cell[9997, 288, 216, 4, 35, "Item",ExpressionUUID->"7d62f794-541d-4f96-bd49-d7252e2e4c34"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10250, 297, 179, 3, 73, "Section",ExpressionUUID->"236e55c0-e3f2-4dce-9415-68a7f73e0698"],
+Cell[10432, 302, 222, 5, 38, "Text",ExpressionUUID->"cf5359c8-a61d-45ba-ba7e-756d55444c00"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3382,        137]
+NotebookOptionsPosition[      3020,        123]
+NotebookOutlinePosition[      3428,        139]
+CellTagsIndexPosition[      3385,        136]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Quiz1
+PROBLEM1
+Whichofthefollowingallowsyoutomakeabulletedlistinanotebook?ClickInsert\
+\[RightPointer]BulletedList
+
+Type*inanewcell
+
+Right - clickthecellbracket; clickStyle\[RightPointer]BulletedList
+
+Noneoftheabove
+PROBLEM2
+Whatisthecorrectwaytostyletext?Usekeyboardshortcuts (e . g . Cmd + b, Ctrl + \
+i, \[Ellipsis])
+
+UseStyletoprogrammaticallyprovideformattingoptions
+
+HighlighttextandclickFormattochoosestylingoptions
+
+Alloftheabove
+PROBLEM3
+WhichofthefollowingcorrectlydemonstrateshowtoimportaCSVfile?Import[/Users/\
+mydir/data . csv]
+
+Import[\"/Users/mydir/data.csv\", \"CSV\"]
+
+Import[/Users/mydir/data . csv, \"CSV\"]
+
+Noneoftheabove
+PROBLEM4
+Whatcombinationoffunctionswouldallowyoutoimportall . \
+jpgfilesinagivenfolder?Table, FileNamesandImport
+
+FileNames, ImportandMap
+
+Import, ImageandTable
+
+AandB
+PROBLEM5
+Whichofthefollowingplottingfunctionsproducesavisualizationthatconsidersonlythe\
+magnitudeoftheinputentries?ReliefPlot
+
+MatrixPlot
+
+ArrayPlot
+
+Noneoftheabove
+PROBLEM6
+Whichofthefollowinginputsproducesascatterplotofthe
+(x, y)
+coordinates
+(x 1, y 1), (x 2, y 2), ..., (x n, y n)
+?ListPlot[{{x 1, y 1}, {x 2, y 2}, ..., {x n, y n}}]
+
+Plot[{x 1, x 2, ..., x n}, {y 1, y 2, ..., y n}]
+
+ListPlot[{x 1, x 2, ..., x n}, {y 1, y 2, ..., y n}]
+
+Plot[{{x 1, y 1}, {x 2, y 2}, ..., {x n, y n}}]
+PROBLEM7
+Whichofthefollowinginputswillgiveyouthe1st, 3 rd, 5 th, \[Ellipsis], 15 \
+thelementsofalistnamedmyList, withlength30?myList[[1 ;; 15 ;; 2]]
+
+myList[[{1, 3, 5, ..., 15}]]
+
+myList[[;; 15 ;; 2]]
+
+Alloftheabove
+PROBLEM8
+IfDimensions[myList] returns
+{4, 7, 3}
+, howmanytotalelementsarecontainedinmyList?84
+
+14
+
+4
+
+Cannotbedeterminedfromthisoutput
+PROBLEM9
+Whichofthefollowingwillproduceaninteractiveobjectthatshowsaplotofasinewavewith\
+varyingwavelengthandamplitude?Manipulate[Plot[aSin[kx], {x, 0, 2 \[Pi]}], \
+{{a, 1, 10}, {k, .1, 10}}]
+
+Manipulate[Plot[aSin[kx], {x, 0, 2 \[Pi]}], {{a, 1, \"Amplitude\"}, 1, 10}, \
+{{k, 1, \"Wavenumber\"}, .1, 10}]
+
+Manipulate[Plot[aSin[kx], {x, 0, 2 \[Pi]}], {a, {1, 3, 5}}, {k, .1, 10}]
+
+BandC
+PROBLEM10
+HowcouldyoupublishtheinteractiveobjectcreatedinProblem9suchthatanybodywiththel\
+inkcoulduseit?CloudDeploy[Manipulate[ ...], \"MySineManipulate\"]
+
+CloudPublish[Manipulate[ ...], \"MySineManipulate\"]
+
+CloudDeploy[Manipulate[ ...], \"PublicURL\" -> True]
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.8201816788678465`*^9, 
+  3.8201816828337603`*^9}},ExpressionUUID->"bc6d692e-3fd6-4f4d-afc8-\
+f12ec1f06a26"]
+},
+WindowSize->{718.5, 748.5},
+WindowMargins->{{0, Automatic}, {534.25, Automatic}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 7, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"646d7b9f-939c-4623-9f38-e9b0a3a98694"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2458, 101, 2036, "Text",ExpressionUUID->"bc6d692e-3fd6-4f4d-afc8-f12ec1f06a26"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

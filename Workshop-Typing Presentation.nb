@@ -1,0 +1,648 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22790,        640]
+NotebookOptionsPosition[     15151,        498]
+NotebookOutlinePosition[     16458,        531]
+CellTagsIndexPosition[     16380,        526]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Typing in a Mathematica Notebook", "Section",
+ CellChangeTimes->{{3.81729832713807*^9, 
+  3.817298334686925*^9}},ExpressionUUID->"0b515e31-03f7-405b-9f1b-\
+726347f1fb27"],
+
+Cell[BoxData[" "], "Input",
+ CellChangeTimes->{
+  3.8174169707164545`*^9},ExpressionUUID->"7a780cca-352a-4723-9d2e-\
+912adc885cfc"],
+
+Cell[BoxData[" "], "Input",
+ CellChangeTimes->{
+  3.817416971988351*^9},ExpressionUUID->"3e278024-4c4a-4b6d-acd0-\
+f2b5c632e026"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sections ", "Section",
+ CellChangeTimes->{{3.8173120096468477`*^9, 3.8173120307195807`*^9}, 
+   3.8174167318062925`*^9},ExpressionUUID->"f12db4d8-f03b-4559-8e4b-\
+8c0a2d1fc7f6"],
+
+Cell[CellGroupData[{
+
+Cell["Subsections ", "Subsection",
+ CellChangeTimes->{{3.8173120522148905`*^9, 3.8173120599659348`*^9}, 
+   3.817416734377363*^9},ExpressionUUID->"28a6b195-35d3-404f-875f-\
+267323c3d2e5"],
+
+Cell[CellGroupData[{
+
+Cell["Subsubsections", "Subsubsection",
+ CellChangeTimes->{{3.817312062885724*^9, 3.8173120712482023`*^9}, {
+  3.817416736180495*^9, 
+  3.8174167371972294`*^9}},ExpressionUUID->"1a400aaa-b73f-4109-84e2-\
+d6d3435da6af"],
+
+Cell["Items", "Item",
+ CellChangeTimes->{{3.817416739302551*^9, 
+  3.8174167402562714`*^9}},ExpressionUUID->"3303cf6b-4a86-4bc5-a382-\
+212bdb0c896a"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[ForAll]", 
+     RowBox[{"\[Epsilon]", ">", "0"}]], 
+    RowBox[{
+     SubscriptBox["\[Exists]", "\[Delta]"], 
+     RowBox[{
+      SubscriptBox["\[ForAll]", "x"], 
+      RowBox[{
+       FormBox[
+        TemplateBox[{
+          RowBox[{"x", "-", 
+            SubscriptBox["x", "0"]}]},
+         "Abs"],
+        TraditionalForm], "<", "\[Delta]"}]}]}]}], "\[Implies]", 
+   RowBox[{
+    FormBox[
+     TemplateBox[{
+       RowBox[{
+         RowBox[{"f", "(", "x", ")"}], "-", 
+         RowBox[{"f", "(", 
+           SubscriptBox["x", "0"], ")"}]}]},
+      "Abs"],
+     TraditionalForm], "<", "\[Epsilon]"}]}], TraditionalForm]],
+ FormatType->
+  TraditionalForm,ExpressionUUID->"80c2c8a4-4f19-4bad-b8fa-07a74f10afbc"]], \
+"Text",
+ CellChangeTimes->{{3.8174167680599346`*^9, 
+  3.8174168860001774`*^9}},ExpressionUUID->"739277de-bf8a-4147-a71f-\
+87c74ea487c0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"57634815-68b7-4179-895b-0b7acb51bd55"],
+
+Cell[CellGroupData[{
+
+Cell["Titles, Sections and other cell styles", "Subsection",
+ CellChangeTimes->{{3.8173015082748485`*^9, 
+  3.8173015447831593`*^9}},ExpressionUUID->"47fc3be4-40ce-4ac2-8626-\
+29d4fba8f691"],
+
+Cell["\<\
+Mathematica is mainly used to run the Wolfram Language in a notebook \
+interface. Never the less it is a great tool for organizing a document that \
+has stylised texts and it is used for building presentations and publishing \
+books as well.\
+\>", "Item",
+ CellChangeTimes->{{3.8173118758854628`*^9, 
+  3.8173119518848047`*^9}},ExpressionUUID->"e5453eee-07bb-4e85-bb3d-\
+149a2a250d04"],
+
+Cell["\<\
+There is a wide array of prebuilt styles of cells for the typesetting purpose\
+\>", "Item",
+ CellChangeTimes->{{3.8173119694338617`*^9, 
+  3.8173119846124754`*^9}},ExpressionUUID->"26f7829a-46ad-4bd3-b7a5-\
+67246edd37c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Title", "Title",
+ CellChangeTimes->{{3.8175504915740595`*^9, 
+  3.817550492256998*^9}},ExpressionUUID->"aedfe463-6b3f-48c9-8324-\
+02445b187e62"],
+
+Cell["Santiago", "Subtitle",
+ CellChangeTimes->{{3.8175505015430603`*^9, 
+  3.8175505033433557`*^9}},ExpressionUUID->"84efe8e2-ea28-49d6-b8a7-\
+f4e21f8b182d"],
+
+Cell[CellGroupData[{
+
+Cell["Sections", "Section",
+ CellChangeTimes->{{3.8175505069484887`*^9, 
+  3.817550508104862*^9}},ExpressionUUID->"3054c890-790e-4bbf-88a9-\
+0eb279d3f375"],
+
+Cell[CellGroupData[{
+
+Cell["Subsection", "Subsection",
+ CellChangeTimes->{{3.817550510672044*^9, 
+  3.817550512577196*^9}},ExpressionUUID->"816ef0e0-77f4-4f05-a61d-\
+6cd4cc2cfbf9"],
+
+Cell[CellGroupData[{
+
+Cell["Subsubsection", "Subsubsection",
+ CellChangeTimes->{{3.817550514980336*^9, 
+  3.817550517971287*^9}},ExpressionUUID->"2f5ee793-02e6-4668-8f60-\
+a6c7f4820024"],
+
+Cell["item 1", "Item",
+ CellChangeTimes->{{3.8175505311645107`*^9, 
+  3.81755053813223*^9}},ExpressionUUID->"264c58da-71e5-4215-a604-\
+be7d6ff8265d"],
+
+Cell["item2", "Item",
+ CellChangeTimes->{{3.8175505311645107`*^9, 
+  3.8175505412880497`*^9}},ExpressionUUID->"3887cd72-b192-438f-b71d-\
+da0a150aa095"],
+
+Cell["hello world", "ItemNumbered",
+ CellChangeTimes->{{3.817550556873412*^9, 
+  3.817550558482797*^9}},ExpressionUUID->"79fb50b2-fa29-48ab-a6d3-\
+1196eb035cb3"],
+
+Cell["this should be some text", "Text",
+ CellChangeTimes->{{3.8175505643202677`*^9, 
+  3.817550585090684*^9}},ExpressionUUID->"e1c8ce07-1cc1-439d-a7dd-\
+32fc9824715f"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"77fcabfd-bb86-4617-a31a-3f0dc2d76b79"],
+
+Cell[CellGroupData[{
+
+Cell["\\[ ]", "Subsection",
+ CellChangeTimes->{{3.817298361974765*^9, 
+  3.81729838091418*^9}},ExpressionUUID->"4449fe1e-f290-4281-822d-\
+52790dba3e2f"],
+
+Cell["\<\
+Not only do we have several styles of texts but there are several characters \
+that can be quickly typed in different ways. \[LineSeparator]The first way we \
+will cover is using the\\[] notation.\
+\>", "Item",
+ CellChangeTimes->{{3.81731224335081*^9, 3.8173123117008443`*^9}, {
+  3.8174156827798796`*^9, 
+  3.8174156889897823`*^9}},ExpressionUUID->"6c2fdcbe-8ef4-4ccd-976b-\
+47dfa548802a"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Another way more reminiscent of writing in ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"T", 
+     AdjustmentBox["E",
+      BoxBaselineShift->0.5,
+      BoxMargins->{{-0.3, 0}, {0, 0}}], "X"}],
+    SingleLetterItalics->False], TraditionalForm]],ExpressionUUID->
+  "870130d1-3ca7-4779-bf16-3710fc8f1443"],
+ " is the . "
+}], "Item",
+ CellChangeTimes->{{3.8173132940691605`*^9, 3.81731341612798*^9}, 
+   3.8174156809350433`*^9},ExpressionUUID->"d628b815-3bde-4b44-88b6-\
+fe4c500bce0b"],
+
+Cell["Greek letters", "Subitem",
+ CellChangeTimes->{{3.81731224335081*^9, 
+  3.81731241293937*^9}},ExpressionUUID->"1e64e84f-42ed-47ab-a316-\
+5ab0033c51b5"],
+
+Cell["Hebrew Letters", "Subitem",
+ CellChangeTimes->{{3.817312426627839*^9, 
+  3.8173124473161635`*^9}},ExpressionUUID->"2fc40012-9de8-404b-a5a5-\
+7d979660f5fc"],
+
+Cell["Double Struck Letters", "Subitem",
+ CellChangeTimes->{{3.817312621427819*^9, 
+  3.8173126348687496`*^9}},ExpressionUUID->"136df6aa-85b8-43bc-8160-\
+e58d230fc648"]
+}, Open  ]],
+
+Cell["\<\
+For more characters there is a long list here guide/ListingOfNamedCharacters\
+\>", "Item",
+ CellChangeTimes->{{3.8173160449680014`*^9, 
+  3.8173160548236127`*^9}},ExpressionUUID->"beaa7121-5255-4587-abeb-\
+2d07825e3587"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"00c3b297-8a6f-406c-88de-c17e7f2f3205"],
+
+Cell[CellGroupData[{
+
+Cell["\[EscapeKey]", "Subsection",
+ CellChangeTimes->{{3.817298342573227*^9, 
+  3.8172983520575743`*^9}},ExpressionUUID->"dae81d9c-ac16-4da3-a5de-\
+237f7aa28b2c"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+When we hit the \[EscapeKey] key we get the following \[AliasDelimiter]  \
+there are certain inputs that when wrapped around two \[AliasDelimiter] \
+symbols will turn into a special character. Some include\
+\>", "Item",
+ CellChangeTimes->{{3.81731224335081*^9, 
+  3.817312401233206*^9}},ExpressionUUID->"3da6f88b-b002-4db9-924a-\
+731088071f3e"],
+
+Cell["Greek letters", "Subitem",
+ CellChangeTimes->{{3.8175508154111533`*^9, 
+  3.8175508236321144`*^9}},ExpressionUUID->"2c7991b4-d215-41f6-a942-\
+0e2fbca2918d"],
+
+Cell["DoubleStruck Letters", "Subitem",
+ CellChangeTimes->{{3.8175508444583073`*^9, 
+  3.8175508489704037`*^9}},ExpressionUUID->"7aee5ffb-33c4-4ef7-be69-\
+803c15896e8b"],
+
+Cell[CellGroupData[{
+
+Cell["Math symbols", "Subitem",
+ CellChangeTimes->{
+  3.8173124927775707`*^9, {3.8173125805258355`*^9, 
+   3.817312587191386*^9}},ExpressionUUID->"b81649b3-aa6d-4520-992c-\
+23a4ead2503e"],
+
+Cell[TextData[{
+ "\[Sum], ",
+ Cell[BoxData[
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"\[SelectionPlaceholder]", "=", "\[Placeholder]"}], 
+    "\[Placeholder]"], "\[Placeholder]"}]],ExpressionUUID->
+  "a9c480ad-78cc-4bd1-b4ca-1f774ad5b3db"],
+ ", \[Integral], \[PartialD]"
+}], "Subsubitem",
+ CellChangeTimes->{
+  3.8173124927775707`*^9, {3.8173125805258355`*^9, 3.817312619715186*^9}, {
+   3.8173126681657095`*^9, 3.8173126852499976`*^9}, {3.8174171863250675`*^9, 
+   3.817417186326064*^9}, {3.8175508856698585`*^9, 
+   3.8175508856698585`*^9}},ExpressionUUID->"98f56623-c00b-44bf-8754-\
+f2f284ec076b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keyboard keys", "Subitem",
+ CellChangeTimes->{{3.8173248709155226`*^9, 
+  3.8173248791321917`*^9}},ExpressionUUID->"4e3f67f8-8aa8-4eaf-9a16-\
+c6bbfdc5c046"],
+
+Cell["\[EscapeKey], \[ControlKey], \[TabKey], \[AltKey], \[EnterKey], \
+\[ShiftKey]", "Subsubitem",
+ CellChangeTimes->{{3.8173248709155226`*^9, 3.817324935438101*^9}, {
+  3.8174172436221657`*^9, 3.8174172436371536`*^9}, {3.817550978392663*^9, 
+  3.8175509783936605`*^9}},ExpressionUUID->"fc546ab8-853a-43d3-8a27-\
+514fffabaf99"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Mathematical Constants", "Subitem",
+ CellChangeTimes->{{3.817417722496519*^9, 
+  3.8174177283285055`*^9}},ExpressionUUID->"00a8427f-025a-47cc-a4a0-\
+1ea8bd385698"],
+
+Cell["\[ExponentialE], \[ImaginaryI]", "Subsubitem",
+ CellChangeTimes->{{3.8174177307728014`*^9, 3.8174177355529704`*^9}, {
+  3.8175509970880566`*^9, 
+  3.817550997097001*^9}},ExpressionUUID->"fd524578-c876-4ada-8fa7-\
+caeddd4c1155"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Common Shortcuts", "Subsection",
+ CellChangeTimes->{{3.8172983980564594`*^9, 
+  3.817298401126257*^9}},ExpressionUUID->"c8ec4de5-d852-4b11-809a-\
+454eeed532cb"],
+
+Cell["\[ControlKey] - _ for subscripts", "Subitem",ExpressionUUID->"0d462dd8-9047-4a38-9408-39753c801c84"],
+
+Cell["\[ControlKey]-6 for superscripts/powers", "Subitem",ExpressionUUID->"71f6c9c2-f66d-482f-9928-6c4fdf350ac3"],
+
+Cell["\[ControlKey]-/ for 2-dim fractions", "Subitem",ExpressionUUID->"7c2e2677-ac65-4f51-a710-32208b09c802"],
+
+Cell["\[ControlKey]-. for selecting expressions from the cursor", "Subitem",ExpressionUUID->"22011ea0-4150-46b5-ad2b-740032fedb85"],
+
+Cell["\[ControlKey]-l for getting last input above", "Subitem",ExpressionUUID->"95f58fc2-9e67-4617-9703-070631e2a2ae"],
+
+Cell["\[ControlKey]-\[ShiftKey]-l for getting last output above", "Subitem",ExpressionUUID->"11392356-57b6-4626-ae47-3005dccdb1cc"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"b3749712-aa9f-4d73-bc65-038c10a75b69"],
+
+Cell[CellGroupData[{
+
+Cell["LaTeX", "Subsection",ExpressionUUID->"354dde06-59aa-470f-bee4-9e5f982c5ffa"],
+
+Cell[TextData[{
+ "In order to start a ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"T", 
+     AdjustmentBox["E",
+      BoxBaselineShift->0.5,
+      BoxMargins->{{-0.3, 0}, {0, 0}}], "X"}],
+    SingleLetterItalics->False], TraditionalForm]],ExpressionUUID->
+  "841d40e6-09d9-4493-a7d8-c5985428d610"],
+ "  we use the \[ControlKey] + $ shortcut ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          StyleBox["x", "TI"], 
+          StyleBox["y", "TI"]], "\[Element]", 
+         StyleBox["Q", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\frac{x}{y}\\in\\mathbb{Q}", "state" -> 
+     "TeX"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "d3f91ddf-d65e-4458-b86c-4283ed9ebcdf"]
+}], "Item",
+ CellChangeTimes->{{3.817314639939412*^9, 
+  3.817314671986085*^9}},ExpressionUUID->"a133bc68-e0bd-4ce1-bdff-\
+92dd75cc901b"],
+
+Cell[TextData[{
+ "This is a text cell ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          StyleBox["x", "TI"], 
+          StyleBox["y", "TI"]], "\[Element]", 
+         StyleBox["Q", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\frac{x}{y}\\in\\mathbb{Q}", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "0d4a4cb5-9192-43da-bcfb-892c80a8ab83"]
+}], "Text",
+ CellChangeTimes->{{3.8174175215784826`*^9, 
+  3.817417532232794*^9}},ExpressionUUID->"18e1b20d-b663-4699-be2a-\
+6d5947d2b736"],
+
+Cell[TextData[{
+ "This is a text cell ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[Association["boxes" -> FormBox[
+       RowBox[{
+         FractionBox[
+          StyleBox["x", "TI"], 
+          StyleBox["y", "TI"]], "\[Element]", 
+         StyleBox["Q", FontSlant -> "Plain"]}], TraditionalForm], 
+     "errors" -> {}, "input" -> "\\frac{x}{y}\\in\\mathbb{Q}", "state" -> 
+     "Boxes"],
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "f46c86eb-4157-4ac3-944c-92daead5fb75"]
+}], "Text",
+ CellChangeTimes->{{3.8175512669648952`*^9, 
+  3.8175512770613112`*^9}},ExpressionUUID->"f6921aa1-9616-40b0-8507-\
+41f9bef0c515"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->
+  "SlideShowHeader",ExpressionUUID->"9028ab3b-86ac-4d29-9eaf-b4d6ee63a3d9"],
+
+Cell[CellGroupData[{
+
+Cell["TraditionalForm", "Subsection",
+ CellChangeTimes->{{3.8172984195230727`*^9, 
+  3.8172984201272917`*^9}},ExpressionUUID->"12a4ad57-2b57-41f1-9839-\
+298d1b2961fe"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "We can also wrap Wolfram language in Mathematica with the ",
+ StyleBox["TraditionalForm",
+  FontWeight->"Bold"],
+ " symbol so that we can see results in a traditional form."
+}], "Item",
+ CellChangeTimes->{{3.817324950276471*^9, 3.8173249961111507`*^9}, {
+  3.817325889011053*^9, 
+  3.817325894931835*^9}},ExpressionUUID->"8c0a922f-567a-488a-ade2-\
+39686ead22f7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"D", "[", 
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}], "+", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"g", "[", "x", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "a", ",", "b"}], "}"}]}], "]"}]}]], "Input",
+ CellLabel->"In[13]:=",ExpressionUUID->"7514dfea-cff5-4b26-ab8d-a10fd5c0d436"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Now we can wrap it on ",
+ StyleBox["TraditionalForm",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.817551429663772*^9, 
+  3.8175514378747115`*^9}},ExpressionUUID->"4ba229f5-ba72-4509-bc4d-\
+5bbb0bfa5f85"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1440., 755.25},
+WindowMargins->{{-6, Automatic}, {533.5, Automatic}},
+TaggingRules->{
+ "WelcomeScreenSettings" -> {"FEStarting" -> False}, 
+  "SlideshowSettings" -> {"Toolbar" -> True}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 7, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"37900dce-2536-4971-96f4-41fa78d5c3e8"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[2847, 103, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"57634815-68b7-4179-895b-0b7acb51bd55",
+   CellTags->"SlideShowHeader"],
+  Cell[5442, 192, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"77fcabfd-bb86-4617-a31a-3f0dc2d76b79",
+   CellTags->"SlideShowHeader"],
+  Cell[7466, 259, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"00c3b297-8a6f-406c-88de-c17e7f2f3205",
+   CellTags->"SlideShowHeader"],
+  Cell[11295, 371, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"b3749712-aa9f-4d73-bc65-038c10a75b69",
+   CellTags->"SlideShowHeader"],
+  Cell[13792, 450, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"9028ab3b-86ac-4d29-9eaf-b4d6ee63a3d9",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 15634, 512}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 176, 3, 66, "Section",ExpressionUUID->"0b515e31-03f7-405b-9f1b-726347f1fb27"],
+Cell[759, 27, 131, 3, 28, "Input",ExpressionUUID->"7a780cca-352a-4723-9d2e-912adc885cfc"],
+Cell[893, 32, 129, 3, 28, "Input",ExpressionUUID->"3e278024-4c4a-4b6d-acd0-f2b5c632e026"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1059, 40, 183, 3, 66, "Section",ExpressionUUID->"f12db4d8-f03b-4559-8e4b-8c0a2d1fc7f6"],
+Cell[CellGroupData[{
+Cell[1267, 47, 187, 3, 55, "Subsection",ExpressionUUID->"28a6b195-35d3-404f-875f-267323c3d2e5"],
+Cell[CellGroupData[{
+Cell[1479, 54, 218, 4, 45, "Subsubsection",ExpressionUUID->"1a400aaa-b73f-4109-84e2-d6d3435da6af"],
+Cell[1700, 60, 149, 3, 31, "Item",ExpressionUUID->"3303cf6b-4a86-4bc5-a382-212bdb0c896a"],
+Cell[1852, 65, 934, 31, 33, "Text",ExpressionUUID->"739277de-bf8a-4147-a71f-87c74ea487c0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2847, 103, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"57634815-68b7-4179-895b-0b7acb51bd55",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2994, 109, 190, 3, 55, "Subsection",ExpressionUUID->"47fc3be4-40ce-4ac2-8626-29d4fba8f691"],
+Cell[3187, 114, 395, 8, 51, "Item",ExpressionUUID->"e5453eee-07bb-4e85-bb3d-149a2a250d04"],
+Cell[3585, 124, 231, 5, 31, "Item",ExpressionUUID->"26f7829a-46ad-4bd3-b7a5-67246edd37c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3853, 134, 150, 3, 97, "Title",ExpressionUUID->"aedfe463-6b3f-48c9-8324-02445b187e62"],
+Cell[4006, 139, 158, 3, 53, "Subtitle",ExpressionUUID->"84efe8e2-ea28-49d6-b8a7-f4e21f8b182d"],
+Cell[CellGroupData[{
+Cell[4189, 146, 155, 3, 66, "Section",ExpressionUUID->"3054c890-790e-4bbf-88a9-0eb279d3f375"],
+Cell[CellGroupData[{
+Cell[4369, 153, 158, 3, 55, "Subsection",ExpressionUUID->"816ef0e0-77f4-4f05-a61d-6cd4cc2cfbf9"],
+Cell[CellGroupData[{
+Cell[4552, 160, 164, 3, 45, "Subsubsection",ExpressionUUID->"2f5ee793-02e6-4668-8f60-a6c7f4820024"],
+Cell[4719, 165, 149, 3, 31, "Item",ExpressionUUID->"264c58da-71e5-4215-a604-be7d6ff8265d"],
+Cell[4871, 170, 151, 3, 31, "Item",ExpressionUUID->"3887cd72-b192-438f-b71d-da0a150aa095"],
+Cell[5025, 175, 161, 3, 31, "ItemNumbered",ExpressionUUID->"79fb50b2-fa29-48ab-a6d3-1196eb035cb3"],
+Cell[5189, 180, 168, 3, 34, "Text",ExpressionUUID->"e1c8ce07-1cc1-439d-a7dd-32fc9824715f"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5442, 192, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"77fcabfd-bb86-4617-a31a-3f0dc2d76b79",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5589, 198, 152, 3, 55, "Subsection",ExpressionUUID->"4449fe1e-f290-4281-822d-52790dba3e2f"],
+Cell[5744, 203, 400, 8, 51, "Item",ExpressionUUID->"6c2fdcbe-8ef4-4ccd-976b-47dfa548802a"],
+Cell[CellGroupData[{
+Cell[6169, 215, 509, 15, 33, "Item",ExpressionUUID->"d628b815-3bde-4b44-88b6-fe4c500bce0b"],
+Cell[6681, 232, 156, 3, 27, "Subitem",ExpressionUUID->"1e64e84f-42ed-47ab-a316-5ab0033c51b5"],
+Cell[6840, 237, 161, 3, 27, "Subitem",ExpressionUUID->"2fc40012-9de8-404b-a5a5-7d979660f5fc"],
+Cell[7004, 242, 168, 3, 27, "Subitem",ExpressionUUID->"136df6aa-85b8-43bc-8160-e58d230fc648"]
+}, Open  ]],
+Cell[7187, 248, 230, 5, 31, "Item",ExpressionUUID->"beaa7121-5255-4587-abeb-2d07825e3587"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7466, 259, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"00c3b297-8a6f-406c-88de-c17e7f2f3205",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[7613, 265, 162, 3, 55, "Subsection",ExpressionUUID->"dae81d9c-ac16-4da3-a5de-237f7aa28b2c"],
+Cell[CellGroupData[{
+Cell[7800, 272, 354, 7, 31, "Item",ExpressionUUID->"3da6f88b-b002-4db9-924a-731088071f3e"],
+Cell[8157, 281, 162, 3, 27, "Subitem",ExpressionUUID->"2c7991b4-d215-41f6-a942-0e2fbca2918d"],
+Cell[8322, 286, 169, 3, 27, "Subitem",ExpressionUUID->"7aee5ffb-33c4-4ef7-be69-803c15896e8b"],
+Cell[CellGroupData[{
+Cell[8516, 293, 187, 4, 27, "Subitem",ExpressionUUID->"b81649b3-aa6d-4520-992c-23a4ead2503e"],
+Cell[8706, 299, 615, 15, 25, "Subsubitem",ExpressionUUID->"98f56623-c00b-44bf-8754-f2f284ec076b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9358, 319, 162, 3, 27, "Subitem",ExpressionUUID->"4e3f67f8-8aa8-4eaf-9a16-c6bbfdc5c046"],
+Cell[9523, 324, 328, 5, 25, "Subsubitem",ExpressionUUID->"fc546ab8-853a-43d3-8a27-514fffabaf99"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9888, 334, 169, 3, 27, "Subitem",ExpressionUUID->"00a8427f-025a-47cc-a4a0-1ea8bd385698"],
+Cell[10060, 339, 233, 4, 25, "Subsubitem",ExpressionUUID->"fd524578-c876-4ada-8fa7-caeddd4c1155"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10354, 350, 166, 3, 55, "Subsection",ExpressionUUID->"c8ec4de5-d852-4b11-809a-454eeed532cb"],
+Cell[10523, 355, 106, 0, 27, "Subitem",ExpressionUUID->"0d462dd8-9047-4a38-9408-39753c801c84"],
+Cell[10632, 357, 113, 0, 27, "Subitem",ExpressionUUID->"71f6c9c2-f66d-482f-9928-6c4fdf350ac3"],
+Cell[10748, 359, 109, 0, 27, "Subitem",ExpressionUUID->"7c2e2677-ac65-4f51-a710-32208b09c802"],
+Cell[10860, 361, 131, 0, 27, "Subitem",ExpressionUUID->"22011ea0-4150-46b5-ad2b-740032fedb85"],
+Cell[10994, 363, 118, 0, 27, "Subitem",ExpressionUUID->"95f58fc2-9e67-4617-9703-070631e2a2ae"],
+Cell[11115, 365, 131, 0, 27, "Subitem",ExpressionUUID->"11392356-57b6-4626-ae47-3005dccdb1cc"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11295, 371, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"b3749712-aa9f-4d73-bc65-038c10a75b69",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[11442, 377, 82, 0, 55, "Subsection",ExpressionUUID->"354dde06-59aa-470f-bee4-9e5f982c5ffa"],
+Cell[11527, 379, 942, 27, 44, "Item",ExpressionUUID->"a133bc68-e0bd-4ce1-bdff-92dd75cc901b"],
+Cell[12472, 408, 633, 17, 53, "Text",ExpressionUUID->"18e1b20d-b663-4699-be2a-6d5947d2b736"],
+Cell[13108, 427, 635, 17, 53, "Text",ExpressionUUID->"f6921aa1-9616-40b0-8507-41f9bef0c515"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13792, 450, 122, 2, 74, "SlideShowNavigationBar",ExpressionUUID->"9028ab3b-86ac-4d29-9eaf-b4d6ee63a3d9",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[13939, 456, 167, 3, 55, "Subsection",ExpressionUUID->"12a4ad57-2b57-41f1-9839-298d1b2961fe"],
+Cell[CellGroupData[{
+Cell[14131, 463, 380, 9, 31, "Item",ExpressionUUID->"8c0a922f-567a-488a-ade2-39686ead22f7"],
+Cell[14514, 474, 361, 10, 28, "Input",ExpressionUUID->"7514dfea-cff5-4b26-ab8d-a10fd5c0d436"]
+}, Open  ]],
+Cell[14890, 487, 233, 7, 31, "Item",ExpressionUUID->"4ba229f5-ba72-4509-bc4d-5bbb0bfa5f85"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
